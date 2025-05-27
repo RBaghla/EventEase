@@ -1,18 +1,25 @@
 ﻿<h3>EventCard</h3>
 
-<div class="card">
-    <h3>@EventName</h3>
-    <p>Date: @EventDate</p>
-    <p>Location: @EventLocation</p>
-</div>
+@if (string.IsNullOrWhiteSpace(EventName) || string.IsNullOrWhiteSpace(EventDate) || string.IsNullOrWhiteSpace(EventLocation))
+{
+    <p class="text-danger">Invalid event data. Please check the input.</p>
+}
+else
+{
+    <div class="card">
+        <h3>@EventName</h3>
+        <p>Date: @EventDate</p>
+        <p>Location: @EventLocation</p>
+    </div>
+}
 
 @code {
-    [Parameter] 
+    [Parameter]
     public string EventName { get; set; }
-    
-    [Parameter] 
+
+    [Parameter]
     public string EventDate { get; set; }
-    
+
     [Parameter]
     public string EventLocation { get; set; }
 }
