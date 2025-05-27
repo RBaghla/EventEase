@@ -1,0 +1,90 @@
+
+# .NET build artifacts
+bin/
+obj/
+
+# User-specific files
+*.swp
+*.swo
+*.user
+*.rsuser
+*.sln.docstates
+*.suo
+*.userosscache
+*.userprefs
+
+# Visual Studio settings
+.vscode/
+.vscode/*
+
+# Rider settings
+.idea/
+.idea/*
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.vscode/*
+
+# JetBrains Rider directories
+.idea/
+.idea/*
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Node.js dependencies
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.old
+*.backup
+*.swp
+*.swo
+*.DS_Store
+
+# Package directories
+*.nupkg
+*.snupkg
+
+# Coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Azure Pipelines
+.azure-pipelines/
+.azure-pipelines/*
+
+# Local History
+.localhistory/
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# IIS Express
+/.vs/
