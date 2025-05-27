@@ -1,0 +1,17 @@
+﻿@page "/events"
+@using EventEase.Data
+
+<h2>Upcoming Events</h2>
+
+@foreach (var ev in events)
+{
+    <EventCard EventName="@ev.Name" EventDate="@ev.Date" EventLocation="@ev.Location" />
+}
+
+@code {
+    private List<Event> events = new List<Event>()
+    {
+            new Event { Name = "Tech Conference", Date = "2025-06-10", Location = "Mumbai" },
+            new Event { Name = "Startup Meetup", Date = "2025-07-05", Location = "Pune" }
+    };
+}
